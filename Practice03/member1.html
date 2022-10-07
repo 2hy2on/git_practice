@@ -1,0 +1,76 @@
+<!-- 20210793 컴퓨터학과 2학년 신이현 크롬 -->
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>이클래스 로그인</title>
+    </head>
+    <style>
+        table,tr,td{
+            table-layout: fixed;
+            margin-left: auto; 
+            margin-right: auto;
+            /* 가운데 정렬 */
+            /* border: solid 1px black; */
+        }
+        .loginImg{
+            float: right; 
+        }
+        .login{
+            font-weight: bolder;
+            font-size: 23px;
+            text-align: center;
+        }
+        .id,.pwd{
+            background-color: #FFFE96;
+            border-top-color: #CCCCCC;
+            border-left-color: #CCCCCC;
+            border-bottom-color:#F6F6F6;
+            border-right-color:#F6F6F6;
+            width: 150px;
+
+        }
+        .secColSize{
+            width: 70px;
+            /* font-family: ; */
+            font-size: 12px;
+            font-family:"돋움";
+            font-weight: bolder;
+        }
+        img { display: block;  
+            margin-left: auto; 
+            margin-right: auto; }
+    </style>
+    <body>
+        <img src="image/eclass_title.jpg">
+            <h3 class="login">로그인</h3>
+            <hr style="border-top: solid 1px #b4b4b4; background-color: #828282; border-bottom: solid 1px#e0e0e0;" >
+        <table>
+            <tr>
+                <td rowspan="5" class="memberLogin"><input type="image" src="image/eclass_logo.png" ></td>
+                <td colspan="2" style="font-weight: bolder; font-size: 12px; font-family: 돋움;">회원님의 아이디와 비밀번호를 정확히 입력하세요.</td>
+            </tr>
+            <form name="frm1">
+                <tr>
+                    <td></td>
+                    <td><select name="type">
+                        <option>학부생</option>
+                        <option>대학원생</option>
+                        <option>교직원</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td class="secColSize">아이디</td>
+                    <td><input type="text" name="id" class="id" maxlength="9"></td>
+                </tr>
+                <tr>
+                    <td td class='secColSize'>비밀번호</td>
+                    <td><input type="password" name="pwd" class="pwd" maxlength="15"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></p><input type="button" value="로그인"> <input type="button" value="가입하기" onclick="document.location='member2.html'"></td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>

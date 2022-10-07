@@ -1,0 +1,11 @@
+float: 한글로 치면 글과 어올리게?
+float none-띄우지 않음
+left-왼쪽에 띄움
+right-오른족에 띄움
+initial- 기본값으로 설정함
+inherit - 부모요소로 부터 상속함
+
+lineheight
+
+tr,td를 120px로 고정해놨기 때문에 2번째 컬럼 크기 조절 안되었음,,,
+관심분야 체크박스 색상 수정

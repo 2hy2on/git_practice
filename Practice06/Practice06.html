@@ -1,0 +1,48 @@
+<!-- 컴퓨터학과 2학년 20210793신이현 크롬 -->
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>계산기</title>
+    <script>
+        function calc(){
+            var exp = prompt('스크립트 프롬프트:\n계산할 수식을 입력하세요');
+            var result = eval(exp);
+            if(exp!=null)
+                alert(result);
+        }
+    </script>
+    </head>
+    <style>
+        table,tr,td{
+            border: 1px solid #EAEAEA;
+            text-align: center;
+            /* width: 300px; */
+            margin: auto;
+            border-collapse: collapse;
+        }
+        .blue{
+            background-color: #53D3FF;
+            font-family: "바탕" ;
+            font-style: italic;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            height: 50px;
+        }
+    </style>
+    <body>
+        <table>
+            <tr>
+                <td colspan="2" class="blue">CalCuLaTor</td>
+            </tr>
+            <tr>
+                <td><input type="image" src="image/cal.jpg"></td>
+                <td style="width: 170px;"><input type="button" value="계산하기" onClick="calc()"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="blue"></td>
+            </tr>
+        </table>
+    </body>
+</html>

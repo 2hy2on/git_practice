@@ -1,0 +1,89 @@
+<!-- 20210793 컴퓨터학과 2학년 신이현 크롬 -->
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>회원가입</title>
+    </head>
+    <style>
+        table, tr,td{
+            border-collapse: collapse;
+            border: solid 1px #8C8C8C;
+            /* table-layout: fixed; */
+            width: 500px;
+        }
+        input.imageAlign{
+            vertical-align: middle;
+        }
+        .gray{
+            font-weight: bold;
+            background-color: #ECECEC;
+            text-align: center;
+            font-family: "굴림";
+        }
+        .gender{
+            accent-color: #666666;
+        }
+        .interests{
+            accent-color: #e0e0e0;
+        }
+    </style>
+    <body>
+        <table>
+            <form>
+            <tr>
+                <td colspan="2" class="gray">회원 가입</td>
+            </tr>
+            <tr>
+                <td class="gray">아이디</td>
+                <td><input type="text" size="12" maxlength="12"> <input type="image" src="image/check.gif" class="imageAlign"></td>
+            </tr>
+            <tr>
+                <td class="gray">패스워드</td>
+                <td><input type="password" size="11" maxlength="11" ></td>
+            </tr>
+            <tr>
+                <td class="gray">성별</td>
+                <td><input type="radio" name="gen" value=0 class="gender">남
+                <input type="radio" name="gen" value=1 checked class="gender">여</td>
+            </tr>
+            <tr>
+                <td class="gray">국적</td>
+                <td><input type="text" value="대한민국"> <input type="button" value="국적변경" disabled></td>
+            </tr>
+            <tr>
+                <td class="gray">휴대폰</td>
+                <td><select><option>010</option></select> - <input type="text" maxlength="4" size="3"> - <input type="text" maxlength="4" size="3"></td>
+            </tr>
+            <tr>
+                <td class="gray">이메일</td>
+                <td><input type="text" size="40"></td>
+            </tr>
+            <tr>
+                <td class="gray">생일</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td class="gray">관심분야</td>
+                <td><input type="checkbox" name="hobby" value=0 class="interests">뉴스
+                <input type="checkbox" name="hobby" value=1 checked class="interests">맛집
+                <input type="checkbox" name="hobby" value=2 class="interests">책
+                <input type="checkbox" name="hobby" value=3 class="interests">영화
+                <input type="checkbox" name="hobby" value=4 class="interests">여행</td>
+            </tr>
+            <tr>
+                <td class="gray">가입인사</td>
+                <td><textarea cols="55" rows="5">회원들에게 간단한 가입인사를 남겨주세요</textarea></td>
+            </tr>
+            <tr>
+                <td class="gray">증명사진</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr class="gray">
+                <td colspan="2"><input type="submit" value="가입하기"> 
+                <input type="reset" value="다시작성"></td>
+            </tr>
+        </form>
+        </table>
+    </body>
+</html>

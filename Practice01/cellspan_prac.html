@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+    <meta charset="UTF-8">
+    <head>
+       <title>셀 합치기</title>
+       <style>
+        table{
+            width: 300px;
+            height: 300px;
+        }
+        table, tr, td{
+            border: 1px solid;
+        }
+        #blue{
+            font-weight: 600;
+            background-color: skyblue;
+        }
+        #pink{
+            font-style: italic;
+            background-color: pink;
+        }
+    </style> 
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td rowspan="3" id="blue">일</td>
+                <td colspan="3" id="pink">이</td>
+            </tr>
+            <tr>
+                <td colspan="2" id="pink">삼</td>
+                <td rowspan="3" id="blue">사</td>
+            </tr>
+            <tr>
+                <td>오</td>
+                <td>육</td>
+            </tr>
+            <tr>
+                <td colspan="3" id="pink">칠</td>
+            </tr>
+        </table>
+    </body>
+</html>
